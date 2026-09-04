@@ -1,0 +1,9 @@
+# Autosquad preview manifest. See conventions/preview-toml.md.
+# Static export of the Next.js app (BUILD_MODE=export); the model runs in the browser, no server needed.
+model = "build-static"
+
+[build]
+command = "npm run export"
+
+[serve]
+static_dir = "out"
